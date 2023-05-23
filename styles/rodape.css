@@ -1,0 +1,39 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+
+/* Estilo para tablet */
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2em 2em;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+
+}
+
+/* Estilo para desktop */
+
+@media screen and (min-width: 1728px) {
+
+    .rodape {
+        padding: 3em 10vw;
+    }
+
+
+
+
+}

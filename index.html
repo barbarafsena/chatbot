@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFluent</title>
+    <!-- Adiciona o favicon na aba do site -->
+    <link rel="icon" type="imagem/svg" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importando o plugin SwiperJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <!-- Ícones que estão na esquerda -->
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <!-- Lista ao clicar no menu -->
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Cursos</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Kid's Course</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Teen's Course</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Adult's Course</a>
+                </li>
+            </ul>
+            <img src="img/logo.png" alt="Logo da BeFluent" class="container__imagem">
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Cursos</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Kid's Course</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Teen's Course</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Adult's Course</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Sobre nós</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Contato</a></li>
+        </ul>
+
+
+    </header>
+    </header>
+
+    <!-- Banner principal   -->
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre os melhores cursos!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual curso você deseja?">
+    </section>
+</body>
+
+
+<!-- Slider main container -->
+<div class="carrossel__container">
+    <div class="swiper">
+
+
+    </div>
+</div>
+
+
+<div class="carrossel__container">
+    <div class="swiper">
+
+
+    </div </div>
+
+
+    <!-- Seção autora do mês -->
+
+    <div class="card">
+        <!--1ª linha-->
+        <div class="card__descricao">
+            <!--1ª coluna-->
+            <div class="descricao">
+                <img src="img/Estrelinhas.svg" class="descricao__estrelas" alt="Classificação de cinco estrelas">
+                <h3 class="descricao__titulo">Experiências</h3>
+                <h2 class="descricao__titulo-livro">Igor Viana</h2>
+                <p class="descricao__texto">Entrei na BeFluent sem saber muita coisa e agora eu consigo me comunicar
+                    facilmente com falantes da língua inglesa</p>
+            </div>
+            <!-- 2ª coluna -->
+            <img src="img/aluno.PNG" style="width: 200px;" class="descricao__imagem" alt="Foto do aluno Igor Viana">
+        </div>
+
+        <!-- 2ª linha -->
+        <div class="card__botoes">
+            <!-- 2ª coluna -->
+            <a href="#" class="botao__ancora">Ver mais relatos</a>
+        </div </div>
+    </div>
+
+
+    <!-- Seção do contato -->
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro da língua inglesa!</h2>
+            <p class="contato__texto">E-books grátis, livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <!-- Rodapé -->
+    <hr>
+    </hr>
+
+
+
+    <script type="text/javascript">
+        (function (d, m) {
+            var kommunicateSettings =
+                { "appId": "3305da76a908a12498cde1332bcc896c5", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    <footer class="rodape">
+        <h2 class="rodape__titulo"><b style="color: #FF3131;">Be</b>Fluent</h2>
+
+
+
+    </footer>
+
+
+
+
+</html>
